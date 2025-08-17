@@ -1,0 +1,816 @@
+{
+  "pack": "remotion-ui-icons-v1",
+  "updatedAt": "2025-08-17T00:00:00.000Z",
+  "assets": [
+    {
+      "id": "icon-shield-v1",
+      "kind": "icon",
+      "version": "v1",
+      "tags": ["security", "protection", "guard", "safety"],
+      "description": "Shield icon representing security and protection",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "outline-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/outline/shield.svg",
+          "themable": true
+        },
+        {
+          "id": "solid-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/solid/shield.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "icon-lock-v1",
+      "kind": "icon",
+      "version": "v1",
+      "tags": ["security", "locked", "private", "secure"],
+      "description": "Lock icon representing security and privacy",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "outline-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/outline/lock.svg",
+          "themable": true
+        },
+        {
+          "id": "solid-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/solid/lock.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "icon-key-v1",
+      "kind": "icon",
+      "version": "v1",
+      "tags": ["security", "access", "unlock", "password"],
+      "description": "Key icon representing access and authentication",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "outline-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/outline/key.svg",
+          "themable": true
+        },
+        {
+          "id": "solid-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/solid/key.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "icon-eye-v1",
+      "kind": "icon",
+      "version": "v1",
+      "tags": ["security", "visibility", "view", "watch"],
+      "description": "Eye icon representing visibility and monitoring",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "outline-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/outline/eye.svg",
+          "themable": true
+        },
+        {
+          "id": "solid-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/solid/eye.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "icon-bug-v1",
+      "kind": "icon",
+      "version": "v1",
+      "tags": ["security", "bug", "vulnerability", "debug"],
+      "description": "Bug icon representing security vulnerabilities or debugging",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "outline-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/outline/bug.svg",
+          "themable": true
+        },
+        {
+          "id": "solid-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/solid/bug.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "icon-server-v1",
+      "kind": "icon",
+      "version": "v1",
+      "tags": ["security", "server", "infrastructure", "hosting"],
+      "description": "Server icon representing infrastructure and hosting",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "outline-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/outline/server.svg",
+          "themable": true
+        },
+        {
+          "id": "solid-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/solid/server.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "icon-chart-v1",
+      "kind": "icon",
+      "version": "v1",
+      "tags": ["business", "analytics", "growth", "metrics"],
+      "description": "Chart icon representing business analytics and growth",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "outline-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/outline/chart.svg",
+          "themable": true
+        },
+        {
+          "id": "solid-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/solid/chart.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "icon-dollar-v1",
+      "kind": "icon",
+      "version": "v1",
+      "tags": ["business", "money", "finance", "currency"],
+      "description": "Dollar icon representing money and finance",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "outline-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/outline/dollar.svg",
+          "themable": true
+        },
+        {
+          "id": "solid-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/solid/dollar.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "icon-clock-v1",
+      "kind": "icon",
+      "version": "v1",
+      "tags": ["business", "time", "schedule", "deadline"],
+      "description": "Clock icon representing time and scheduling",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "outline-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/outline/clock.svg",
+          "themable": true
+        },
+        {
+          "id": "solid-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/solid/clock.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "icon-users-v1",
+      "kind": "icon",
+      "version": "v1",
+      "tags": ["business", "team", "people", "collaboration"],
+      "description": "Users icon representing team and collaboration",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "outline-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/outline/users.svg",
+          "themable": true
+        },
+        {
+          "id": "solid-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/solid/users.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "icon-briefcase-v1",
+      "kind": "icon",
+      "version": "v1",
+      "tags": ["business", "work", "professional", "career"],
+      "description": "Briefcase icon representing business and professional work",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "outline-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/outline/briefcase.svg",
+          "themable": true
+        },
+        {
+          "id": "solid-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/solid/briefcase.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "icon-play-v1",
+      "kind": "icon",
+      "version": "v1",
+      "tags": ["media", "play", "video", "audio"],
+      "description": "Play icon for media controls",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "outline-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/outline/play.svg",
+          "themable": true
+        },
+        {
+          "id": "solid-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/solid/play.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "icon-pause-v1",
+      "kind": "icon",
+      "version": "v1",
+      "tags": ["media", "pause", "video", "audio"],
+      "description": "Pause icon for media controls",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "outline-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/outline/pause.svg",
+          "themable": true
+        },
+        {
+          "id": "solid-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/solid/pause.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "icon-mic-v1",
+      "kind": "icon",
+      "version": "v1",
+      "tags": ["media", "microphone", "audio", "recording"],
+      "description": "Microphone icon for audio recording",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "outline-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/outline/mic.svg",
+          "themable": true
+        },
+        {
+          "id": "solid-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/solid/mic.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "icon-music-v1",
+      "kind": "icon",
+      "version": "v1",
+      "tags": ["media", "music", "audio", "sound"],
+      "description": "Music icon representing audio and sound",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "outline-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/outline/music.svg",
+          "themable": true
+        },
+        {
+          "id": "solid-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/solid/music.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "icon-waveform-v1",
+      "kind": "icon",
+      "version": "v1",
+      "tags": ["media", "audio", "waveform", "sound"],
+      "description": "Waveform icon representing audio visualization",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "outline-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/outline/waveform.svg",
+          "themable": true
+        },
+        {
+          "id": "solid-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/solid/waveform.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "icon-check-v1",
+      "kind": "icon",
+      "version": "v1",
+      "tags": ["system", "success", "complete", "valid"],
+      "description": "Check icon representing success and completion",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "outline-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/outline/check.svg",
+          "themable": true
+        },
+        {
+          "id": "solid-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/solid/check.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "icon-xmark-v1",
+      "kind": "icon",
+      "version": "v1",
+      "tags": ["system", "close", "cancel", "delete"],
+      "description": "X mark icon representing close and cancel actions",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "outline-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/outline/xmark.svg",
+          "themable": true
+        },
+        {
+          "id": "solid-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/solid/xmark.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "icon-info-v1",
+      "kind": "icon",
+      "version": "v1",
+      "tags": ["system", "information", "help", "details"],
+      "description": "Info icon representing information and help",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "outline-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/outline/info.svg",
+          "themable": true
+        },
+        {
+          "id": "solid-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/solid/info.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "icon-alert-v1",
+      "kind": "icon",
+      "version": "v1",
+      "tags": ["system", "warning", "alert", "attention"],
+      "description": "Alert icon representing warnings and attention",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "outline-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/outline/alert.svg",
+          "themable": true
+        },
+        {
+          "id": "solid-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/solid/alert.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "icon-gear-v1",
+      "kind": "icon",
+      "version": "v1",
+      "tags": ["system", "settings", "configuration", "preferences"],
+      "description": "Gear icon representing settings and configuration",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "outline-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/outline/gear.svg",
+          "themable": true
+        },
+        {
+          "id": "solid-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/solid/gear.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "icon-cloud-v1",
+      "kind": "icon",
+      "version": "v1",
+      "tags": ["system", "cloud", "storage", "remote"],
+      "description": "Cloud icon representing cloud storage and services",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "outline-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/outline/cloud.svg",
+          "themable": true
+        },
+        {
+          "id": "solid-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/solid/cloud.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "icon-home-v1",
+      "kind": "icon",
+      "version": "v1",
+      "tags": ["navigation", "home", "house", "main"],
+      "description": "Home icon representing home page or main location",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "outline-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/outline/home.svg",
+          "themable": true
+        },
+        {
+          "id": "solid-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/solid/home.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "icon-download-v1",
+      "kind": "icon",
+      "version": "v1",
+      "tags": ["action", "download", "save", "export"],
+      "description": "Download icon representing download and save actions",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "outline-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/outline/download.svg",
+          "themable": true
+        },
+        {
+          "id": "solid-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/solid/download.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "icon-upload-v1",
+      "kind": "icon",
+      "version": "v1",
+      "tags": ["action", "upload", "import", "share"],
+      "description": "Upload icon representing upload and import actions",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "outline-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/outline/upload.svg",
+          "themable": true
+        },
+        {
+          "id": "solid-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/solid/upload.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "icon-star-v1",
+      "kind": "icon",
+      "version": "v1",
+      "tags": ["rating", "star", "favorite", "bookmark"],
+      "description": "Star icon representing ratings and favorites",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "outline-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/outline/star.svg",
+          "themable": true
+        },
+        {
+          "id": "solid-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/solid/star.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "icon-heart-v1",
+      "kind": "icon",
+      "version": "v1",
+      "tags": ["emotion", "heart", "love", "like"],
+      "description": "Heart icon representing love and likes",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "outline-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/outline/heart.svg",
+          "themable": true
+        },
+        {
+          "id": "solid-24",
+          "format": "svg",
+          "width": 24,
+          "height": 24,
+          "path": "icons/v1/solid/heart.svg",
+          "themable": true
+        }
+      ]
+    }
+  ]
+}
