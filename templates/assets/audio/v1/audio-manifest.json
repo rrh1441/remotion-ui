@@ -1,0 +1,117 @@
+{
+  "pack": "audio-v1",
+  "version": "1.0.0",
+  "updatedAt": "2025-01-18",
+  "sounds": [
+    {
+      "id": "sfx-whoosh-01",
+      "category": "sfx",
+      "subcategory": "whoosh",
+      "description": "Quick swoosh transition sound",
+      "duration": 0.5,
+      "bpm": null,
+      "tags": ["transition", "fast", "swoosh"],
+      "format": "mp3",
+      "path": "sfx/whoosh-01.mp3"
+    },
+    {
+      "id": "sfx-click-01",
+      "category": "sfx",
+      "subcategory": "clicks",
+      "description": "UI button click sound",
+      "duration": 0.2,
+      "bpm": null,
+      "tags": ["ui", "button", "interaction"],
+      "format": "mp3",
+      "path": "sfx/click-01.mp3"
+    },
+    {
+      "id": "sfx-pop-01",
+      "category": "sfx",
+      "subcategory": "pops",
+      "description": "Bubble pop effect",
+      "duration": 0.3,
+      "bpm": null,
+      "tags": ["pop", "bubble", "playful"],
+      "format": "mp3",
+      "path": "sfx/pop-01.mp3"
+    },
+    {
+      "id": "sfx-impact-01",
+      "category": "sfx",
+      "subcategory": "impacts",
+      "description": "Heavy impact sound",
+      "duration": 0.8,
+      "bpm": null,
+      "tags": ["impact", "heavy", "dramatic"],
+      "format": "mp3",
+      "path": "sfx/impact-01.mp3"
+    },
+    {
+      "id": "music-intro-01",
+      "category": "music",
+      "subcategory": "intros",
+      "description": "Upbeat intro music",
+      "duration": 5,
+      "bpm": 120,
+      "tags": ["intro", "upbeat", "energetic"],
+      "format": "mp3",
+      "path": "music/intro-01.mp3"
+    },
+    {
+      "id": "music-loop-01",
+      "category": "music",
+      "subcategory": "loops",
+      "description": "Background music loop",
+      "duration": 30,
+      "bpm": 100,
+      "tags": ["loop", "background", "ambient"],
+      "format": "mp3",
+      "path": "music/loop-01.mp3"
+    },
+    {
+      "id": "music-outro-01",
+      "category": "music",
+      "subcategory": "outros",
+      "description": "Gentle outro music",
+      "duration": 3,
+      "bpm": 80,
+      "tags": ["outro", "gentle", "closing"],
+      "format": "mp3",
+      "path": "music/outro-01.mp3"
+    },
+    {
+      "id": "ambient-office-01",
+      "category": "ambient",
+      "subcategory": "office",
+      "description": "Office ambience with typing",
+      "duration": 60,
+      "bpm": null,
+      "tags": ["ambient", "office", "typing"],
+      "format": "mp3",
+      "path": "ambient/office-01.mp3"
+    },
+    {
+      "id": "ambient-nature-01",
+      "category": "ambient",
+      "subcategory": "nature",
+      "description": "Forest birds ambience",
+      "duration": 60,
+      "bpm": null,
+      "tags": ["ambient", "nature", "birds"],
+      "format": "mp3",
+      "path": "ambient/nature-01.mp3"
+    },
+    {
+      "id": "ambient-tech-01",
+      "category": "ambient",
+      "subcategory": "tech",
+      "description": "Digital tech ambience",
+      "duration": 60,
+      "bpm": null,
+      "tags": ["ambient", "tech", "digital"],
+      "format": "mp3",
+      "path": "ambient/tech-01.mp3"
+    }
+  ]
+}

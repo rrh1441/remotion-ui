@@ -1,0 +1,108 @@
+---
+title: Installation
+description: How to install and set up Remotion-UI in your project
+---
+
+# Installation
+
+Get started with Remotion-UI in your Remotion project.
+
+## Prerequisites
+
+- Node.js 18+
+- A Remotion project (v4.0+)
+- TypeScript (recommended)
+
+## Install the CLI
+
+The Remotion-UI CLI is the recommended way to add components to your project:
+
+```bash
+npm install -D @remotion-ui/cli
+```
+
+## Initialize
+
+Run the init command to set up Remotion-UI in your project:
+
+```bash
+npx remotion-ui init
+```
+
+This will:
+1. Create a `remotion/ui` directory in your project
+2. Set up the theme system and tokens
+3. Configure TypeScript paths
+4. Add the base components
+
+### Options
+
+```bash
+# Specify a custom path
+npx remotion-ui init --path src/components/motion
+
+# Enable Tailwind CSS integration
+npx remotion-ui init --tailwind
+
+# Skip confirmation prompts
+npx remotion-ui init --yes
+```
+
+## Add Components
+
+Once initialized, you can start adding components:
+
+```bash
+# Add specific components
+npx remotion-ui add title-card lower-third
+
+# Add multiple components
+npx remotion-ui add title-card lower-third stat-block fade-in
+
+# Add all components (not recommended)
+npx remotion-ui add --all
+```
+
+## Add Assets
+
+Install asset packs for icons, shapes, and backgrounds:
+
+```bash
+# Add icon pack
+npx remotion-ui add assets icons@v1
+
+# Add multiple asset packs
+npx remotion-ui add assets icons@v1 shapes@v1 backgrounds@v1
+
+# Add all available assets
+npx remotion-ui add assets --all
+```
+
+## Manual Installation
+
+If you prefer to install components manually:
+
+1. Copy the component files from `templates/components/`
+2. Copy required primitives from `templates/core/primitives/`
+3. Set up the theme provider from `templates/themes/`
+4. Copy assets to your `public/assets/` directory
+
+## TypeScript Configuration
+
+Ensure your `tsconfig.json` includes:
+
+```json
+{
+  "compilerOptions": {
+    "paths": {
+      "@/remotion/ui/*": ["./src/remotion/ui/*"]
+    }
+  }
+}
+```
+
+## Next Steps
+
+- [Browse components](/docs/components) to see what's available
+- [Explore assets](/docs/assets) for icons and graphics
+- [Read the guides](/docs/guides) for best practices
