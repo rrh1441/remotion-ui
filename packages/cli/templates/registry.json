@@ -1,0 +1,237 @@
+{
+  "fade-in": {
+    "name": "fade-in",
+    "dependencies": [],
+    "files": [
+      "core/primitives/FadeIn.tsx"
+    ]
+  },
+  "fade-out": {
+    "name": "fade-out",
+    "dependencies": [],
+    "files": [
+      "core/primitives/FadeOut.tsx"
+    ]
+  },
+  "slide-in": {
+    "name": "slide-in",
+    "dependencies": [],
+    "files": [
+      "core/primitives/SlideIn.tsx"
+    ]
+  },
+  "slide-out": {
+    "name": "slide-out",
+    "dependencies": [],
+    "files": [
+      "core/primitives/SlideOut.tsx"
+    ]
+  },
+  "scale-in": {
+    "name": "scale-in",
+    "dependencies": [],
+    "files": [
+      "core/primitives/ScaleIn.tsx"
+    ]
+  },
+  "scale-out": {
+    "name": "scale-out",
+    "dependencies": [],
+    "files": [
+      "core/primitives/ScaleOut.tsx"
+    ]
+  },
+  "stack": {
+    "name": "stack",
+    "dependencies": [],
+    "files": [
+      "core/primitives/Stack.tsx"
+    ]
+  },
+  "stagger": {
+    "name": "stagger",
+    "dependencies": [],
+    "files": [
+      "core/primitives/Stagger.tsx"
+    ]
+  },
+  "timeline-gate": {
+    "name": "timeline-gate",
+    "dependencies": [],
+    "files": [
+      "core/primitives/TimelineGate.tsx"
+    ]
+  },
+  "title-card": {
+    "name": "title-card",
+    "dependencies": [
+      "fade-in"
+    ],
+    "files": [
+      "components/TitleCard.tsx"
+    ]
+  },
+  "lower-third": {
+    "name": "lower-third",
+    "dependencies": [
+      "slide-in"
+    ],
+    "files": [
+      "components/LowerThird.tsx"
+    ]
+  },
+  "stat-block": {
+    "name": "stat-block",
+    "dependencies": [
+      "scale-in"
+    ],
+    "files": [
+      "components/StatBlock.tsx"
+    ]
+  },
+  "kpi-strip": {
+    "name": "kpi-strip",
+    "dependencies": [
+      "stat-block",
+      "stagger",
+      "stack"
+    ],
+    "files": [
+      "components/KPIStrip.tsx"
+    ]
+  },
+  "quote-block": {
+    "name": "quote-block",
+    "dependencies": [
+      "fade-in"
+    ],
+    "files": [
+      "components/QuoteBlock.tsx"
+    ]
+  },
+  "list-reveal": {
+    "name": "list-reveal",
+    "dependencies": [
+      "stagger",
+      "fade-in"
+    ],
+    "files": [
+      "components/ListReveal.tsx"
+    ]
+  },
+  "progress-bar": {
+    "name": "progress-bar",
+    "dependencies": [],
+    "files": [
+      "components/ProgressBar.tsx"
+    ]
+  },
+  "end-card": {
+    "name": "end-card",
+    "dependencies": [
+      "fade-in",
+      "scale-in"
+    ],
+    "files": [
+      "components/EndCard.tsx"
+    ]
+  },
+  "device-frame": {
+    "name": "device-frame",
+    "dependencies": [],
+    "files": [
+      "components/DeviceFrame.tsx"
+    ]
+  },
+  "cross-fade": {
+    "name": "cross-fade",
+    "dependencies": [],
+    "files": [
+      "components/transitions/CrossFade.tsx"
+    ]
+  },
+  "dip-to-color": {
+    "name": "dip-to-color",
+    "dependencies": [],
+    "files": [
+      "components/transitions/DipToColor.tsx"
+    ]
+  },
+  "push": {
+    "name": "push",
+    "dependencies": [],
+    "files": [
+      "components/transitions/Push.tsx"
+    ]
+  },
+  "wipe": {
+    "name": "wipe",
+    "dependencies": [],
+    "files": [
+      "components/transitions/Wipe.tsx"
+    ]
+  },
+  "line-chart": {
+    "name": "line-chart",
+    "dependencies": [],
+    "files": [
+      "components/LineChart.tsx"
+    ]
+  },
+  "bar-chart": {
+    "name": "bar-chart",
+    "dependencies": [],
+    "files": [
+      "components/BarChart.tsx"
+    ]
+  },
+  "pie-chart": {
+    "name": "pie-chart",
+    "dependencies": [],
+    "files": [
+      "components/PieChart.tsx"
+    ]
+  },
+  "instagram-post": {
+    "name": "instagram-post",
+    "dependencies": [],
+    "files": [
+      "components/InstagramPost.tsx"
+    ]
+  },
+  "tweet-embed": {
+    "name": "tweet-embed",
+    "dependencies": [],
+    "files": [
+      "components/TweetEmbed.tsx"
+    ]
+  },
+  "character": {
+    "name": "character",
+    "dependencies": [],
+    "files": [
+      "components/Character.tsx"
+    ]
+  },
+  "loading-spinner": {
+    "name": "loading-spinner",
+    "dependencies": [],
+    "files": [
+      "components/LoadingSpinner.tsx"
+    ]
+  },
+  "particle-effect": {
+    "name": "particle-effect",
+    "dependencies": [],
+    "files": [
+      "components/ParticleEffect.tsx"
+    ]
+  },
+  "audio-player": {
+    "name": "audio-player",
+    "dependencies": [],
+    "files": [
+      "components/AudioPlayer.tsx"
+    ]
+  }
+}

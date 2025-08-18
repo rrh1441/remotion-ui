@@ -5,6 +5,7 @@ import chalk from 'chalk';
 import { init } from './commands/init';
 import { add } from './commands/add';
 import { addPreset } from './commands/add-preset';
+import { addAssets } from './commands/add-assets';
 
 const program = new Command();
 
@@ -38,8 +39,7 @@ program
   .command('add-assets [packs...]')
   .description('Add asset packs to your project')
   .option('--path <path>', 'Path to install assets', 'public/assets')
-  .action(async (packs, options) => {
-    console.log(chalk.yellow('Asset packs feature coming soon!'));
-  });
+  .option('--overwrite', 'Overwrite existing asset packs')
+  .action(addAssets);
 
 program.parse();

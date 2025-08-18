@@ -1,0 +1,263 @@
+---
+title: Quick Start
+description: Create your first video with Remotion-UI in under 10 minutes
+---
+
+# Quick Start Guide
+
+Get up and running with Remotion-UI in under 10 minutes. This guide will walk you through creating a simple but professional video.
+
+## Prerequisites
+
+- Node.js 18 or later
+- An existing Remotion project (v4.0+)
+- Basic familiarity with React
+
+Don't have a Remotion project yet? Create one first:
+
+```bash
+npm create video@latest
+```
+
+## Step 1: Install Remotion-UI CLI
+
+In your Remotion project directory, install the CLI as a dev dependency:
+
+```bash
+npm install -D @remotion-ui/cli
+```
+
+## Step 2: Initialize Remotion-UI
+
+Set up the basic structure:
+
+```bash
+npx remotion-ui init
+```
+
+This creates a `src/remotion/ui` directory with:
+- 📁 `themes/` - Theme provider and tokens
+- 📁 `presets/` - Aspect ratio presets
+- 📁 `core/` - Will contain primitives
+- 📁 `components/` - Will contain components
+
+## Step 3: Add Your First Components
+
+Let's add some components to create a simple intro video:
+
+```bash
+npx remotion-ui add title-card fade-in bar-chart
+```
+
+The CLI will:
+- Copy the component files to your project
+- Automatically resolve any dependencies
+- Show you the import paths
+
+## Step 4: Add Assets
+
+Install the icon pack for some visual flair:
+
+```bash
+npx remotion-ui add-assets icons@v1
+```
+
+This copies 54 icons to `public/assets/icons/v1/`.
+
+## Step 5: Create Your First Composition
+
+Create a new file `src/MyFirstVideo.tsx`:
+
+```tsx
+import { Composition, Sequence } from 'remotion';
+import { TitleCard } from './remotion/ui/components/TitleCard';
+import { FadeIn } from './remotion/ui/core/primitives/FadeIn';
+import { BarChart } from './remotion/ui/components/BarChart';
+
+export const MyFirstVideo = () => {
+  return (
+    <>
+      {/* Scene 1: Title (0-90 frames / 3 seconds) */}
+      <Sequence from={0} durationInFrames={90}>
+        <FadeIn durationInFrames={30}>
+          <TitleCard
+            title="Quarterly Report"
+            subtitle="Q4 2024 Results"
+            backgroundColor="#1e40af"
+          />
+        </FadeIn>
+      </Sequence>
+
+      {/* Scene 2: Data (90-210 frames / 4 seconds) */}
+      <Sequence from={90} durationInFrames={120}>
+        <FadeIn durationInFrames={20}>
+          <div style={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+            height: '100%',
+            backgroundColor: '#f3f4f6',
+            padding: 40,
+          }}>
+            <h2 style={{ fontSize: 48, marginBottom: 40 }}>
+              Revenue by Quarter
+            </h2>
+            <BarChart
+              data={[
+                { label: 'Q1', value: 45, color: '#3b82f6' },
+                { label: 'Q2', value: 72, color: '#8b5cf6' },
+                { label: 'Q3', value: 63, color: '#ec4899' },
+                { label: 'Q4', value: 95, color: '#10b981' },
+              ]}
+              animationType="grow"
+              width={800}
+              height={400}
+            />
+          </div>
+        </FadeIn>
+      </Sequence>
+    </>
+  );
+};
+
+// Register the composition
+export const MyFirstComposition = () => (
+  <Composition
+    id="my-first-video"
+    component={MyFirstVideo}
+    durationInFrames={210} // 7 seconds at 30fps
+    fps={30}
+    width={1920}
+    height={1080}
+  />
+);
+```
+
+## Step 6: Add to Your Root File
+
+In your `src/Root.tsx` (or wherever you register compositions):
+
+```tsx
+import { MyFirstComposition } from './MyFirstVideo';
+
+export const RemotionRoot = () => {
+  return (
+    <>
+      {/* Your existing compositions */}
+      <MyFirstComposition />
+    </>
+  );
+};
+```
+
+## Step 7: Preview Your Video
+
+Start the Remotion development server:
+
+```bash
+npm start
+```
+
+Open your browser and select "my-first-video" from the composition list. You should see:
+1. A title card fading in
+2. Transitioning to an animated bar chart
+
+## Step 8: Render Your Video
+
+To export as MP4:
+
+```bash
+npx remotion render my-first-video out/video.mp4
+```
+
+## 🎉 Congratulations!
+
+You've just created your first video with Remotion-UI! In just a few minutes, you've:
+- ✅ Installed and initialized Remotion-UI
+- ✅ Added professional components
+- ✅ Created a multi-scene composition
+- ✅ Used animations and transitions
+
+## What's Next?
+
+### Explore More Components
+
+```bash
+# Add social media components
+npx remotion-ui add instagram-post tweet-embed
+
+# Add more transitions
+npx remotion-ui add cross-fade dip-to-color
+
+# Add loading animations
+npx remotion-ui add loading-spinner particle-effect
+```
+
+### Customize Your Theme
+
+Edit `src/remotion/ui/themes/ThemeProvider.tsx` to customize colors and fonts:
+
+```tsx
+const defaultTheme = {
+  colors: {
+    primary: '#your-brand-color',
+    secondary: '#your-secondary-color',
+    // ...
+  }
+};
+```
+
+### Use Different Aspect Ratios
+
+```tsx
+import { ASPECT_PRESETS } from './remotion/ui/presets/AspectPresets';
+
+// Use vertical format for social media
+<Composition
+  {...ASPECT_PRESETS.vertical}
+  id="social-video"
+  component={YourComponent}
+/>
+```
+
+### Learn More
+
+- [Browse all components](/docs/components)
+- [Explore the asset library](/docs/assets)
+- [Read the API documentation](/docs/api)
+- [See more examples](/docs/examples)
+
+## Troubleshooting
+
+### Components not found after installation?
+
+Make sure your import paths match where the CLI installed them:
+
+```tsx
+// Default installation path
+import { TitleCard } from './remotion/ui/components/TitleCard';
+
+// If you used a custom path with --path
+import { TitleCard } from './your/custom/path/components/TitleCard';
+```
+
+### TypeScript errors?
+
+Ensure your `tsconfig.json` includes the Remotion-UI directory:
+
+```json
+{
+  "include": ["src/**/*", "src/remotion/ui/**/*"]
+}
+```
+
+### Need help?
+
+- Check our [documentation](/docs)
+- Report issues on [GitHub](https://github.com/rrh1441/remotion-ui/issues)
+- Join the Remotion Discord community
+
+---
+
+**Happy creating!** 🎬✨
