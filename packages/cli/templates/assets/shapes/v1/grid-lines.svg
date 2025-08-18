@@ -1,0 +1,8 @@
+<svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="lineGrid" patternUnits="userSpaceOnUse" width="24" height="24">
+      <path d="M24 0 L0 0 L0 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="240" height="240" fill="url(#lineGrid)"/>
+</svg>

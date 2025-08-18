@@ -1,0 +1,4 @@
+<svg viewBox="0 0 180 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M20 20 L140 20 L170 40 L140 60 L20 60 Q10 60 10 50 L10 30 Q10 20 20 20 Z" fill="currentColor"/>
+  <path d="M20 20 L140 20 L170 40 L140 60 L20 60 Q10 60 10 50 L10 30 Q10 20 20 20 Z" stroke="currentColor" stroke-width="2" fill="none" opacity="0.8"/>
+</svg>

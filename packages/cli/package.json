@@ -2,20 +2,45 @@
   "name": "@remotion-ui/cli",
   "version": "0.1.0",
   "description": "CLI for Remotion UI - copy components and assets into your project",
-  "main": "./dist/index.js",
+  "type": "module",
+  "main": "./dist/index.mjs",
   "bin": {
-    "remotion-ui": "./dist/index.js"
+    "remotion-ui": "./dist/index.mjs"
   },
   "files": [
     "dist",
     "templates"
   ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rrh1441/remotion-ui.git",
+    "directory": "packages/cli"
+  },
+  "homepage": "https://github.com/rrh1441/remotion-ui",
+  "bugs": {
+    "url": "https://github.com/rrh1441/remotion-ui/issues"
+  },
+  "keywords": [
+    "remotion",
+    "cli",
+    "components",
+    "video",
+    "animation",
+    "motion-graphics"
+  ],
+  "author": "Ryan Heger",
+  "license": "MIT",
   "scripts": {
-    "build": "tsup",
+    "build": "tsup && node scripts/copy-templates.js",
     "dev": "tsup --watch",
     "lint": "eslint . --ext .ts",
     "typecheck": "tsc --noEmit",
-    "clean": "rm -rf dist .turbo"
+    "clean": "rm -rf dist templates .turbo",
+    "prepublishOnly": "pnpm run clean && pnpm run build"
   },
   "dependencies": {
     "chalk": "^5.3.0",

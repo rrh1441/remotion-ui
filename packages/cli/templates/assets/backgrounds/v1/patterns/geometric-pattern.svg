@@ -1,0 +1,16 @@
+<svg viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="geometricPattern" patternUnits="userSpaceOnUse" width="80" height="80">
+      <rect width="80" height="80" fill="#f8f9fa"/>
+      <!-- Hexagon -->
+      <polygon points="40,10 60,25 60,45 40,60 20,45 20,25" stroke="#e9ecef" stroke-width="1" fill="none"/>
+      <!-- Inner triangle -->
+      <polygon points="40,25 50,40 30,40" stroke="#dee2e6" stroke-width="1" fill="none"/>
+      <!-- Connecting lines -->
+      <line x1="40" y1="0" x2="40" y2="10" stroke="#e9ecef" stroke-width="1"/>
+      <line x1="0" y1="40" x2="20" y2="40" stroke="#e9ecef" stroke-width="1"/>
+      <line x1="60" y1="40" x2="80" y2="40" stroke="#e9ecef" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#geometricPattern)"/>
+</svg>
