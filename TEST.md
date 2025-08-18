@@ -1,419 +1,415 @@
 # 🧪 Remotion-UI Testing Guide
 
-Welcome to Remotion-UI! This guide will walk you through testing all the features as a new user.
+Test Remotion-UI by installing components into your existing Remotion project, just like shadcn/ui.
 
 ## 📋 Prerequisites
 
-- Node.js 18+ installed
-- Git installed
-- Basic familiarity with React and TypeScript
+- An existing Remotion project (v4.0+)
+- Node.js 18+
+- TypeScript configured
 
-## 🚀 Quick Start (5 minutes)
+## 🚀 Testing in Your Remotion Project (5 minutes)
 
-### 1. Clone and Install
-
-```bash
-# Clone the repository
-git clone https://github.com/rrh1441/remotion-ui.git
-cd remotion-ui
-
-# Install dependencies (using pnpm)
-npm install -g pnpm
-pnpm install
-
-# Build all packages
-pnpm build
-```
-
-### 2. Start the Documentation Site
+### 1. Install the CLI in Your Project
 
 ```bash
-# Start the docs site
-pnpm --filter @remotion-ui/docs dev
+# In your existing Remotion project
+cd my-remotion-project
 
-# Open in browser
-# Visit http://localhost:3000
+# Install the Remotion-UI CLI as a dev dependency
+npm install -D @remotion-ui/cli
+
+# Or using pnpm/yarn
+pnpm add -D @remotion-ui/cli
+yarn add -D @remotion-ui/cli
 ```
 
-You should see:
-- ✅ Landing page with "Remotion-UI" title
-- ✅ Quick install commands
-- ✅ Feature cards (20+ Components, 70+ Assets, Copy & Paste)
+### 2. Initialize Remotion-UI
 
-### 3. Navigate Documentation
+```bash
+# Set up Remotion-UI in your project
+npx remotion-ui init
 
-Click "Get Started" or visit `/docs`:
-- ✅ Sidebar navigation
-- ✅ Documentation sections
-- ✅ Component categories
-
-## 🎨 Testing Components (15 minutes)
-
-### A. Motion Primitives
-
-Test the basic animation components in `templates/core/primitives/`:
-
-```tsx
-// Test FadeIn.tsx
-import { FadeIn } from './templates/core/primitives/FadeIn';
-
-// In a Remotion composition:
-<FadeIn durationInFrames={30}>
-  <h1>This fades in!</h1>
-</FadeIn>
+# This will:
+# - Create a remotion/ui directory
+# - Set up theme tokens
+# - Configure TypeScript paths
+# - Add base primitives
 ```
 
-✅ **Expected**: Element fades from opacity 0 to 1 over 30 frames
+✅ **Verify**: Check that `src/remotion/ui/` directory was created
 
-### B. Title Components
+### 3. Add Your First Components
 
-Test title and text components:
+```bash
+# Add title and animation components
+npx remotion-ui add title-card fade-in slide-in
+
+# Add data visualization components
+npx remotion-ui add line-chart bar-chart
+
+# Add social media components
+npx remotion-ui add instagram-post tweet-embed
+```
+
+✅ **Verify**: Components appear in `src/remotion/ui/components/`
+
+### 4. Add Asset Packs
+
+```bash
+# Add icon pack (70+ icons)
+npx remotion-ui add assets icons@v1
+
+# Add shapes and backgrounds
+npx remotion-ui add assets shapes@v1 backgrounds@v1
+```
+
+✅ **Verify**: Assets copied to `public/assets/` with manifest.json
+
+## 🎬 Testing Components in Your Composition
+
+### A. Create a Test Composition
+
+Create `src/TestRemotionUI.tsx`:
 
 ```tsx
-// Test TitleCard.tsx
-import { TitleCard } from './templates/components/TitleCard';
+import { Composition } from 'remotion';
+import { TitleCard } from './remotion/ui/components/TitleCard';
+import { FadeIn } from './remotion/ui/core/primitives/FadeIn';
+import { LineChart } from './remotion/ui/components/LineChart';
+
+export const RemotionUITest = () => {
+  return (
+    <>
+      <FadeIn durationInFrames={30}>
+        <TitleCard 
+          title="Testing Remotion-UI"
+          subtitle="It works!"
+        />
+      </FadeIn>
+    </>
+  );
+};
+
+// Register the composition
+export const RemotionUIComposition = () => (
+  <Composition
+    id="remotion-ui-test"
+    component={RemotionUITest}
+    durationInFrames={150}
+    fps={30}
+    width={1920}
+    height={1080}
+  />
+);
+```
+
+### B. Test Different Components
+
+#### 1. Title Components
+```tsx
+import { TitleCard } from './remotion/ui/components/TitleCard';
+import { LowerThird } from './remotion/ui/components/LowerThird';
 
 <TitleCard 
-  title="Welcome Video"
+  title="Welcome"
   subtitle="Made with Remotion-UI"
   backgroundColor="#1e40af"
 />
-```
 
-✅ **Expected**: Animated title card with fade-in effect
-
-### C. Data Visualization
-
-Test the new chart components:
-
-```tsx
-// Test LineChart.tsx
-import { LineChart } from './templates/components/LineChart';
-
-<LineChart 
-  data={[
-    { x: 0, y: 10, label: 'Jan' },
-    { x: 1, y: 25, label: 'Feb' },
-    { x: 2, y: 15, label: 'Mar' },
-  ]}
-  strokeColor="#3b82f6"
-  showGrid
-  showDots
+<LowerThird
+  primary="John Doe"
+  secondary="Software Engineer"
+  align="left"
 />
 ```
 
-✅ **Expected**: Animated line chart with grid and data points
+✅ **Expected**: Smooth fade-in animations with proper styling
 
+#### 2. Data Visualization
 ```tsx
-// Test BarChart.tsx
-import { BarChart } from './templates/components/BarChart';
+import { BarChart } from './remotion/ui/components/BarChart';
 
 <BarChart
   data={[
-    { label: 'Q1', value: 45, color: '#3b82f6' },
-    { label: 'Q2', value: 72, color: '#8b5cf6' },
-    { label: 'Q3', value: 63, color: '#ec4899' },
+    { label: 'Q1', value: 45 },
+    { label: 'Q2', value: 72 },
+    { label: 'Q3', value: 63 },
+    { label: 'Q4', value: 89 },
   ]}
   animationType="grow"
 />
 ```
 
-✅ **Expected**: Bars grow from bottom with staggered animation
+✅ **Expected**: Animated bars growing from bottom
 
-### D. Social Media Components
-
+#### 3. Social Media
 ```tsx
-// Test InstagramPost.tsx
-import { InstagramPost } from './templates/components/InstagramPost';
+import { InstagramPost } from './remotion/ui/components/InstagramPost';
 
 <InstagramPost
-  username="remotion_ui"
-  image="/path/to/image.jpg"
+  username="myproject"
+  image="/my-image.jpg"
   likes={1234}
-  caption="Check out this amazing video!"
+  caption="Check this out!"
   verified={true}
 />
 ```
 
-✅ **Expected**: Instagram-style post with slide-in animation
+✅ **Expected**: Instagram-style card with animations
 
-### E. Character System
-
+#### 4. Character System
 ```tsx
-// Test Character.tsx
-import { Character } from './templates/components/Character';
+import { Character } from './remotion/ui/components/Character';
 
 <Character
   persona="tech"
   pose="pointing"
   emotion="happy"
-  position={{ x: 100, y: 100 }}
-  animateIn
 />
 ```
 
-✅ **Expected**: Animated character with specified pose and emotion
+✅ **Expected**: Animated character with expressions
 
-### F. Loading & Effects
-
-```tsx
-// Test LoadingSpinner.tsx
-import { LoadingSpinner } from './templates/components/LoadingSpinner';
-
-<LoadingSpinner 
-  variant="dots"
-  color="#3b82f6"
-  size={48}
-/>
-```
-
-✅ **Expected**: Animated loading spinner with bouncing dots
-
-## 📦 Testing Assets (10 minutes)
-
-### 1. Icons
-
-Check the icon collection in `templates/assets/icons/v1/`:
-
-```bash
-# List all icons
-ls templates/assets/icons/v1/outline/
-ls templates/assets/icons/v1/solid/
-```
-
-✅ **Expected**: 
-- 27 outline SVG icons
-- 27 solid SVG icons
-- Icons include: shield, lock, chart, users, play, check, alert, etc.
-
-### 2. Shapes & Decorations
-
-Check decorative elements:
-
-```bash
-ls templates/assets/shapes/v1/
-```
-
-✅ **Expected**: 13 SVG shapes including blobs, ribbons, grids, burst, badge
-
-### 3. Backgrounds
-
-Check background assets:
-
-```bash
-ls templates/assets/backgrounds/v1/
-```
-
-✅ **Expected**: 6 backgrounds (gradients, textures, patterns)
-
-### 4. Asset Manifest
-
-Verify the manifest:
-
-```bash
-cat templates/assets/manifest.json | jq '.assets | length'
-# Should output: 73
-```
-
-## 🔊 Testing Audio System (5 minutes)
-
-Check the audio structure:
-
-```bash
-# View audio manifest
-cat templates/assets/audio/v1/audio-manifest.json
-
-# Test AudioPlayer component
-```
+### C. Test Assets
 
 ```tsx
-import { AudioPlayer } from './templates/components/AudioPlayer';
+import { useAsset } from './remotion/ui/assets/useAsset';
 
-<AudioPlayer
-  src="/assets/audio/v1/sfx/whoosh-01.mp3"
-  volume={0.8}
-  fadeInDuration={10}
-  fadeOutDuration={10}
-/>
-```
-
-✅ **Expected**: Audio plays with fade in/out effects
-
-## 🎯 Testing Aspect Presets (5 minutes)
-
-Test different aspect ratios:
-
-```tsx
-import { ASPECT_PRESETS } from './templates/presets/AspectPresets';
-import { FramePreset } from './templates/presets/FramePreset';
-
-// Test vertical (9:16) preset
-<FramePreset
-  preset="vertical"
-  showSafeArea={true}
->
-  <YourContent />
-</FramePreset>
-```
-
-✅ **Expected**: 
-- Correct dimensions (1080×1920)
-- Dashed safe area boundaries visible
-- Content properly contained
-
-## 🧩 Integration Test (10 minutes)
-
-Create a complete test composition combining multiple components:
-
-```tsx
-// TestComposition.tsx
-import { Composition, Sequence } from 'remotion';
-import { TitleCard } from './templates/components/TitleCard';
-import { BarChart } from './templates/components/BarChart';
-import { Character } from './templates/components/Character';
-import { LoadingSpinner } from './templates/components/LoadingSpinner';
-import { CrossFade } from './templates/components/transitions/CrossFade';
-
-export const TestVideo = () => {
-  return (
-    <>
-      {/* Scene 1: Title */}
-      <Sequence from={0} durationInFrames={90}>
-        <TitleCard 
-          title="Remotion-UI Test"
-          subtitle="All Systems Go!"
-        />
-      </Sequence>
-
-      {/* Scene 2: Data Viz */}
-      <Sequence from={90} durationInFrames={120}>
-        <BarChart
-          data={[
-            { label: 'Test 1', value: 85 },
-            { label: 'Test 2', value: 92 },
-            { label: 'Test 3', value: 78 },
-          ]}
-        />
-      </Sequence>
-
-      {/* Scene 3: Character */}
-      <Sequence from={210} durationInFrames={90}>
-        <Character
-          persona="tech"
-          pose="presenting"
-          emotion="excited"
-          position={{ x: 400, y: 300 }}
-        />
-      </Sequence>
-    </>
-  );
+const MyComponent = () => {
+  const { url } = useAsset('icon-shield-v1', 'outline-24');
+  
+  return <img src={url} alt="Shield" />;
 };
+```
+
+✅ **Expected**: Icon loads from `/public/assets/`
+
+## 🔧 CLI Commands to Test
+
+### Adding Components
+
+```bash
+# Test individual component additions
+npx remotion-ui add fade-in
+npx remotion-ui add title-card
+npx remotion-ui add bar-chart
+
+# Test multiple components
+npx remotion-ui add fade-in slide-in scale-in
+
+# List available components
+npx remotion-ui list components
+```
+
+### Adding Assets
+
+```bash
+# Add specific asset packs
+npx remotion-ui add assets icons@v1
+npx remotion-ui add assets shapes@v1
+
+# List available assets
+npx remotion-ui list assets
+```
+
+### Adding Presets
+
+```bash
+# Add aspect ratio presets
+npx remotion-ui add-preset vertical   # 9:16
+npx remotion-ui add-preset square     # 1:1
+npx remotion-ui add-preset web        # 16:9
 ```
 
 ## ✅ Verification Checklist
 
-### Core Functionality
-- [ ] Repository clones successfully
-- [ ] Dependencies install without errors
-- [ ] All packages build (`pnpm build`)
-- [ ] Documentation site runs (`pnpm --filter @remotion-ui/docs dev`)
+### CLI Installation
+- [ ] CLI installs without errors
+- [ ] `npx remotion-ui --help` shows commands
+- [ ] `init` command creates directory structure
 
-### Components (Test at least 3 from each category)
-- [ ] **Primitives**: FadeIn, SlideIn, ScaleIn work
-- [ ] **Titles**: TitleCard, LowerThird animate properly
-- [ ] **Data Viz**: Charts render with animations
-- [ ] **Social**: Instagram/Tweet components display correctly
-- [ ] **Characters**: Different poses and emotions work
-- [ ] **Effects**: LoadingSpinner and ParticleEffect animate
+### Component Installation
+- [ ] Components copy to correct directory
+- [ ] TypeScript imports work
+- [ ] No missing dependencies
+- [ ] Components render in Remotion
 
-### Assets
-- [ ] 73 total assets present in manifest
-- [ ] Icons load correctly (test 5 random icons)
-- [ ] Shapes render properly
-- [ ] Backgrounds display
+### Asset Installation
+- [ ] Assets copy to `/public/assets/`
+- [ ] Manifest.json is valid
+- [ ] Assets load in browser
+- [ ] `useAsset` hook works
 
-### Documentation
-- [ ] Homepage loads
-- [ ] Navigation works
-- [ ] Code examples are visible
-- [ ] No console errors
-
-### Build & Deploy
-- [ ] Production build succeeds: `pnpm build`
+### In Your Remotion Project
+- [ ] Components animate properly
 - [ ] No TypeScript errors
-- [ ] No lint warnings
+- [ ] No console errors
+- [ ] Renders at target FPS
 
-## 🐛 Troubleshooting
+## 🎯 Quick Smoke Test (2 minutes)
 
-### Common Issues & Solutions
+```bash
+# In your Remotion project, run these commands:
+npx remotion-ui init
+npx remotion-ui add title-card fade-in
+npx remotion-ui add assets icons@v1
 
-1. **Port already in use**
-   ```bash
-   # Try a different port
-   pnpm --filter @remotion-ui/docs dev --port 3003
-   ```
+# Then create a simple test:
+```
 
-2. **Module not found errors**
-   ```bash
-   # Rebuild packages
-   pnpm build
-   ```
+```tsx
+// src/QuickTest.tsx
+import { FadeIn } from './remotion/ui/core/primitives/FadeIn';
+import { TitleCard } from './remotion/ui/components/TitleCard';
 
-3. **SVG assets not loading**
-   - Ensure assets are copied to public directory
-   - Check paths in manifest.json
+export const QuickTest = () => (
+  <FadeIn>
+    <TitleCard title="It works!" />
+  </FadeIn>
+);
+```
 
-4. **Component not animating**
-   - Check you're in a Remotion composition
-   - Verify frame count and fps settings
+If this renders, the basic system is working!
 
-## 📊 Performance Benchmarks
+## 🐛 Common Issues & Solutions
 
-Expected performance metrics:
+### "Module not found" after adding component
+```bash
+# Component may have dependencies on primitives
+npx remotion-ui add fade-in slide-in stagger
+```
 
-- **Build time**: < 30 seconds
-- **Docs site load**: < 2 seconds
-- **Component render**: < 16ms per frame (60fps)
-- **Asset loading**: < 100ms per asset
+### Assets not loading
+```bash
+# Ensure assets are in public directory
+ls public/assets/
+# Should show: manifest.json, icons/, shapes/, etc.
+```
+
+### TypeScript path errors
+```json
+// Add to tsconfig.json
+{
+  "compilerOptions": {
+    "paths": {
+      "@/remotion/ui/*": ["./src/remotion/ui/*"]
+    }
+  }
+}
+```
+
+### Component not animating
+- Ensure you're within a Remotion `Composition`
+- Check `durationInFrames` prop
+- Verify `fps` settings match
+
+## 📊 What to Expect
+
+### File Structure After Installation
+```
+your-remotion-project/
+├── src/
+│   └── remotion/
+│       └── ui/
+│           ├── components/      # Your selected components
+│           ├── core/
+│           │   └── primitives/  # Animation primitives
+│           ├── themes/          # Theme provider
+│           └── assets/          # Asset utilities
+├── public/
+│   └── assets/                  # Icons, shapes, etc.
+│       ├── manifest.json
+│       ├── icons/v1/
+│       ├── shapes/v1/
+│       └── backgrounds/v1/
+└── package.json                 # @remotion-ui/cli in devDependencies
+```
+
+### Performance Expectations
+- Component copy: < 1 second per component
+- Asset installation: < 5 seconds for full pack
+- No runtime overhead (it's just copied code)
+- Same performance as hand-written components
+
+## 🚀 Advanced Testing
+
+### Custom Theme
+```tsx
+// Test theme customization
+import { ThemeProvider } from './remotion/ui/themes/ThemeProvider';
+
+<ThemeProvider 
+  theme={{
+    colors: {
+      primary: '#ff0000',
+      secondary: '#00ff00',
+    }
+  }}
+>
+  <YourComponents />
+</ThemeProvider>
+```
+
+### Combining Multiple Components
+```tsx
+import { Sequence } from 'remotion';
+import { TitleCard } from './remotion/ui/components/TitleCard';
+import { BarChart } from './remotion/ui/components/BarChart';
+import { CrossFade } from './remotion/ui/components/transitions/CrossFade';
+
+export const AdvancedTest = () => (
+  <>
+    <Sequence from={0} durationInFrames={90}>
+      <TitleCard title="Data Report" />
+    </Sequence>
+    
+    <Sequence from={60} durationInFrames={120}>
+      <CrossFade durationInFrames={30}>
+        <BarChart data={yourData} />
+      </CrossFade>
+    </Sequence>
+  </>
+);
+```
 
 ## 🎉 Success Criteria
 
-You've successfully tested Remotion-UI if:
+You've successfully integrated Remotion-UI if:
 
-1. ✅ All components render without errors
-2. ✅ Animations play smoothly
-3. ✅ Assets load correctly
-4. ✅ Documentation site is accessible
-5. ✅ You can create a custom composition using multiple components
-6. ✅ Build process completes without errors
+1. ✅ CLI installs and runs in your project
+2. ✅ Components copy to your project correctly
+3. ✅ Components render without import errors
+4. ✅ Animations play smoothly
+5. ✅ You can customize components locally
+6. ✅ Assets load from public directory
+
+## 💡 The Key Difference from Libraries
+
+Remember: **You own the code!**
+
+- ✅ No `node_modules` dependency
+- ✅ Components are in YOUR source code
+- ✅ Fully customizable after copying
+- ✅ No version conflicts
+- ✅ No bundle size from external deps
+- ✅ Can delete components you don't use
 
 ## 📝 Feedback
 
-If you encounter any issues:
+If the CLI doesn't work as expected:
 
-1. Check the console for error messages
-2. Verify all dependencies are installed
-3. Ensure you're using Node.js 18+
-4. Create an issue on GitHub with:
+1. Check you have Node.js 18+
+2. Ensure you're in a Remotion project
+3. Report issues with:
+   - Your Remotion version
    - Error message
-   - Steps to reproduce
-   - System information
-
-## 🚀 Next Steps
-
-Once testing is complete, try:
-
-1. Creating your own custom component
-2. Adding new assets to the library
-3. Building a complete video project
-4. Contributing improvements back to the project
+   - Command that failed
 
 ---
 
-**Testing Time Estimate**: ~45 minutes for complete walkthrough
+**Quick Test**: 2 minutes (just init + one component)
 
-**Quick Test** (5 min): Just run steps in "Quick Start" section
+**Full Test**: 15 minutes (multiple components + assets)
 
-**Full Test** (45 min): Complete all sections including integration test
-
-Happy testing! 🎬✨
+This is YOUR code now - customize it however you want! 🎨
