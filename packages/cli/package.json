@@ -1,11 +1,11 @@
 {
-  "name": "@remotion-ui/cli",
-  "version": "0.1.0",
+  "name": "@contentfork/remotion-ui",
+  "version": "0.1.0-beta.1",
   "description": "CLI for Remotion UI - copy components and assets into your project",
   "type": "module",
-  "main": "./dist/index.mjs",
+  "main": "./dist/index.js",
   "bin": {
-    "remotion-ui": "./dist/index.mjs"
+    "remotion-ui": "./dist/index.js"
   },
   "files": [
     "dist",
@@ -39,6 +39,8 @@
     "dev": "tsup --watch",
     "lint": "eslint . --ext .ts",
     "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage",
     "clean": "rm -rf dist templates .turbo",
     "prepublishOnly": "pnpm run clean && pnpm run build"
   },
@@ -60,8 +62,10 @@
     "@types/inquirer": "^9.0.7",
     "@types/node": "^20.14.14",
     "@types/prompts": "^2.4.9",
+    "@vitest/coverage-v8": "^1.2.0",
     "eslint": "^8.57.0",
     "tsup": "^8.2.4",
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "vitest": "^1.2.0"
   }
 }

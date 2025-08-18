@@ -1,7 +1,7 @@
 {
-  "name": "@remotion-ui/components",
+  "name": "@remotion-ui/text",
   "version": "0.1.0",
-  "description": "Composed components for Remotion UI",
+  "description": "Advanced text animation components for Remotion UI",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -27,16 +27,13 @@
     "remotion": "^4.0.0"
   },
   "dependencies": {
-    "@lottiefiles/dotlottie-web": "^0.50.0",
     "@remotion-ui/core": "workspace:*",
-    "@remotion-ui/themes": "workspace:*",
-    "@remotion/lottie": "^4.0.339"
+    "@remotion-ui/themes": "workspace:*"
   },
   "devDependencies": {
     "@remotion-ui/eslint-config": "workspace:*",
     "@remotion-ui/ts-config": "workspace:*",
     "@types/react": "^18.3.3",
-    "@types/react-dom": "^18",
     "eslint": "^8.57.0",
     "react": "^18.3.1",
     "remotion": "^4.0.212",

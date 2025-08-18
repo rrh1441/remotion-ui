@@ -2,9 +2,16 @@
 
 **A source-first component, asset, and preset system for Remotion** - Think "shadcn for motion"
 
-## 🚀 Project Status
+## 🚀 Project Status: Beta Release
 
-This is a work-in-progress implementation of Remotion-UI v0.1. The core architecture and foundation packages have been built. See [NEXTSTEPS.md](./NEXTSTEPS.md) for remaining work.
+> **Beta Notice:** This is v0.1.0-beta.1 of Remotion-UI. The API is stable and production-ready, but we're gathering feedback before the official v0.1.0 release. Please report any issues or suggestions!
+
+### ✅ Ready for Use
+- **Feature-complete CLI** with automatic dependency resolution
+- **25+ motion components** ready to copy into your project
+- **70+ production assets** including icons, shapes, and backgrounds
+- **Visual regression testing** ensuring component stability
+- **Comprehensive documentation** with quick-start guide
 
 ## 📦 What's Been Built
 
@@ -29,11 +36,27 @@ Remotion-UI aims to provide:
 4. **Professional components** - TitleCards, LowerThirds, transitions, and more
 5. **shadcn-style DX** - Simple CLI, great defaults, fully customizable
 
+## 🚀 Quick Start
+
+```bash
+# Install the CLI (beta)
+npm install -D @contentfork/remotion-ui@beta
+
+# Initialize in your Remotion project
+npx remotion-ui init --path src/remotion/ui
+
+# Add components
+npx remotion-ui add title-card lower-third stat-block
+
+# Add assets
+npx remotion-ui add assets icons@v1 shapes@v1 backgrounds@v1
+```
+
 ## 🛠️ Development Setup
 
 ```bash
 # Clone the repository
-git clone <repo-url>
+git clone https://github.com/rrh1441/remotion-ui.git
 cd remotion-ui
 
 # Install dependencies
@@ -41,6 +64,9 @@ pnpm install
 
 # Build all packages
 pnpm build
+
+# Run tests
+pnpm test
 
 # Run in development mode
 pnpm dev
@@ -62,15 +88,24 @@ remotion-ui/
 └── tooling/          # Shared configs
 ```
 
-## 🚧 What's Next
+## 📊 Beta Feedback
 
-See [NEXTSTEPS.md](./NEXTSTEPS.md) for detailed remaining work:
-- Template files for CLI copying
-- 70+ asset generation
-- Missing components (QuoteBlock, EndCard, DeviceFrame)
-- Documentation site with demos
-- Testing infrastructure
-- NPM publishing setup
+We're looking for feedback on:
+- **Component API** - Are the props intuitive?
+- **Asset quality** - Do the assets meet your needs?
+- **CLI experience** - Is the installation process smooth?
+- **Documentation** - What's missing or unclear?
+
+Please [open an issue](https://github.com/rrh1441/remotion-ui/issues) with your feedback!
+
+## 🚀 Future Roadmap
+
+See [FEATURE_ROADMAP.md](./FEATURE_ROADMAP.md) for planned features including:
+- **Data Visualization** - Charts, metrics, flow diagrams
+- **Audio Sync** - TTS integration, captions, waveforms
+- **Advanced Text** - TypeWriter, word stagger, glitch effects
+- **Pro Transitions** - Dissolves, wipes, stingers
+- And much more based on production usage analysis!
 
 ## 📄 License
 

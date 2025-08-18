@@ -173,6 +173,55 @@ const COMPONENT_REGISTRY = {
     source: 'templates/components/AudioPlayer.tsx',
     target: 'components/AudioPlayer.tsx',
     dependencies: []
+  },
+  
+  // Data visualization components
+  'animated-number': {
+    source: 'dataviz/src/components/AnimatedNumber.tsx',
+    target: 'components/dataviz/AnimatedNumber.tsx',
+    dependencies: []
+  },
+  'data-card': {
+    source: 'dataviz/src/components/DataCard.tsx',
+    target: 'components/dataviz/DataCard.tsx',
+    dependencies: ['animated-number']
+  },
+  'flow-diagram': {
+    source: 'dataviz/src/components/FlowDiagram.tsx',
+    target: 'components/dataviz/FlowDiagram.tsx',
+    dependencies: []
+  },
+  'comparison-card': {
+    source: 'dataviz/src/components/ComparisonCard.tsx',
+    target: 'components/dataviz/ComparisonCard.tsx',
+    dependencies: []
+  },
+  'metric-block': {
+    source: 'dataviz/src/components/MetricBlock.tsx',
+    target: 'components/dataviz/MetricBlock.tsx',
+    dependencies: ['animated-number']
+  },
+  
+  // Text animation components
+  'type-writer': {
+    source: 'text/src/components/TypeWriter.tsx',
+    target: 'components/text/TypeWriter.tsx',
+    dependencies: []
+  },
+  'word-stagger': {
+    source: 'text/src/components/WordStagger.tsx',
+    target: 'components/text/WordStagger.tsx',
+    dependencies: []
+  },
+  'text-glitch': {
+    source: 'text/src/components/TextGlitch.tsx',
+    target: 'components/text/TextGlitch.tsx',
+    dependencies: []
+  },
+  'text-highlight': {
+    source: 'text/src/components/TextHighlight.tsx',
+    target: 'components/text/TextHighlight.tsx',
+    dependencies: []
   }
 };
 

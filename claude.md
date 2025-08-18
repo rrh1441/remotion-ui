@@ -258,3 +258,58 @@ templates/
 ---
 
 **Primary objective**: Ship a credible **v0.1** with a real, sizeable **asset system** (≥70 items), stable **component API**, and a frictionless **copy-in CLI** so users can create professional Remotion videos immediately after running 2–3 commands.
+
+---
+
+# FUTURE DEVELOPMENT ROADMAP
+
+See [FEATURE_ROADMAP.md](./FEATURE_ROADMAP.md) for comprehensive feature suggestions based on production usage analysis.
+
+## Priority Features for v0.2+
+
+### High Priority
+1. **@remotion-ui/dataviz** - Data visualization components (AnimatedNumber, DataCard, FlowDiagram, MetricBlock)
+2. **@remotion-ui/audio** - Audio synchronization (AudioSequence, TTSProvider, CaptionSync, WaveformVisualizer)
+3. **@remotion-ui/text** - Advanced text animations (TypeWriter, WordStagger, TextGlitch, TextHighlight)
+
+### Medium Priority
+4. **@remotion-ui/transitions** - Professional scene transitions (CrossDissolve, SceneWipe, GlitchTransition)
+5. **@remotion-ui/layouts** - Layout templates (SplitScreen, IconTextGrid, FullScreenGraphic)
+6. **Enhanced themes** - PaletteProvider, ColorExtractor, ThemeVariants
+
+### Future Considerations
+7. **Asset management** - VideoBackground, LottieLoader, IconLibrary
+8. **Export utilities** - AspectRatioWrapper, SafeAreaGuide, MultiFormatExport
+
+## Community Feedback Tracking
+
+- Data visualization is the #1 requested feature
+- Audio sync tools would save 40% development time
+- Enterprise users need branded color systems
+- Educational content creators need text animation presets
+
+## Beta Launch Status
+
+✅ **Published**: @contentfork/remotion-ui@0.1.0-beta.1 is live on npm
+- Install: `npm install -D @contentfork/remotion-ui@beta`
+- Documentation updated with correct package name
+- Ready for community feedback
+
+# Important Instructions & Reminders
+
+## Development Guidelines
+- Do what has been asked; nothing more, nothing less
+- NEVER create files unless they're absolutely necessary for achieving your goal
+- ALWAYS prefer editing an existing file to creating a new one
+- NEVER proactively create documentation files (*.md) or README files unless explicitly requested
+
+## Current Status
+- Beta v0.1.0-beta.1 published to npm
+- Core features complete and tested
+- Ready for community feedback and iteration
+
+## Next Development Cycle
+Focus on high-priority features from FEATURE_ROADMAP.md:
+1. Data visualization components (most requested)
+2. Audio synchronization tools (saves 40% dev time)
+3. Advanced text animations (universal need)

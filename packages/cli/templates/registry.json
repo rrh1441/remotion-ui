@@ -233,5 +233,72 @@
     "files": [
       "components/AudioPlayer.tsx"
     ]
+  },
+  "animated-number": {
+    "name": "animated-number",
+    "dependencies": [],
+    "files": [
+      "components/dataviz/AnimatedNumber.tsx"
+    ]
+  },
+  "data-card": {
+    "name": "data-card",
+    "dependencies": [
+      "animated-number"
+    ],
+    "files": [
+      "components/dataviz/DataCard.tsx"
+    ]
+  },
+  "flow-diagram": {
+    "name": "flow-diagram",
+    "dependencies": [],
+    "files": [
+      "components/dataviz/FlowDiagram.tsx"
+    ]
+  },
+  "comparison-card": {
+    "name": "comparison-card",
+    "dependencies": [],
+    "files": [
+      "components/dataviz/ComparisonCard.tsx"
+    ]
+  },
+  "metric-block": {
+    "name": "metric-block",
+    "dependencies": [
+      "animated-number"
+    ],
+    "files": [
+      "components/dataviz/MetricBlock.tsx"
+    ]
+  },
+  "type-writer": {
+    "name": "type-writer",
+    "dependencies": [],
+    "files": [
+      "components/text/TypeWriter.tsx"
+    ]
+  },
+  "word-stagger": {
+    "name": "word-stagger",
+    "dependencies": [],
+    "files": [
+      "components/text/WordStagger.tsx"
+    ]
+  },
+  "text-glitch": {
+    "name": "text-glitch",
+    "dependencies": [],
+    "files": [
+      "components/text/TextGlitch.tsx"
+    ]
+  },
+  "text-highlight": {
+    "name": "text-highlight",
+    "dependencies": [],
+    "files": [
+      "components/text/TextHighlight.tsx"
+    ]
   }
 }

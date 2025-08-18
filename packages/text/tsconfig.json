@@ -1,0 +1,10 @@
+{
+  "extends": "../../tooling/ts-config/react.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "incremental": false
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
