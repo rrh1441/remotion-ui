@@ -1,0 +1,13 @@
+<svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Corner frame elements -->
+  <path d="M20 20 L20 40 M20 20 L40 20" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+  <path d="M100 20 L80 20 M100 20 L100 40" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+  <path d="M20 100 L20 80 M20 100 L40 100" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+  <path d="M100 100 L100 80 M100 100 L80 100" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Inner corners -->
+  <path d="M30 30 L30 35 M30 30 L35 30" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <path d="M90 30 L85 30 M90 30 L90 35" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <path d="M30 90 L30 85 M30 90 L35 90" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <path d="M90 90 L90 85 M90 90 L85 90" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+</svg>

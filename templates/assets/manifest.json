@@ -1,5 +1,5 @@
 {
-  "pack": "remotion-ui-icons-v1",
+  "pack": "remotion-ui-assets-v1",
   "updatedAt": "2025-08-17T00:00:00.000Z",
   "assets": [
     {
@@ -809,6 +809,424 @@
           "height": 24,
           "path": "icons/v1/solid/heart.svg",
           "themable": true
+        }
+      ]
+    },
+    {
+      "id": "shape-blob-1-v1",
+      "kind": "shape",
+      "version": "v1",
+      "tags": ["organic", "blob", "fluid", "abstract"],
+      "description": "Organic flowing blob shape for decorative elements",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "default",
+          "format": "svg",
+          "width": 240,
+          "height": 240,
+          "path": "shapes/v1/blob-1.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "shape-blob-2-v1",
+      "kind": "shape",
+      "version": "v1",
+      "tags": ["organic", "blob", "fluid", "abstract"],
+      "description": "Organic flowing blob shape variant for decorative elements",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "default",
+          "format": "svg",
+          "width": 240,
+          "height": 240,
+          "path": "shapes/v1/blob-2.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "shape-ribbon-banner-v1",
+      "kind": "shape",
+      "version": "v1",
+      "tags": ["ribbon", "banner", "callout", "decoration"],
+      "description": "Ribbon banner shape for highlighting content",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "default",
+          "format": "svg",
+          "width": 240,
+          "height": 80,
+          "path": "shapes/v1/ribbon-banner.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "shape-callout-speech-v1",
+      "kind": "shape",
+      "version": "v1",
+      "tags": ["callout", "speech", "bubble", "dialogue"],
+      "description": "Speech bubble callout shape for dialogue and quotes",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "default",
+          "format": "svg",
+          "width": 160,
+          "height": 120,
+          "path": "shapes/v1/callout-speech.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "shape-callout-arrow-v1",
+      "kind": "shape",
+      "version": "v1",
+      "tags": ["callout", "arrow", "pointer", "direction"],
+      "description": "Arrow callout shape for pointing and emphasis",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "default",
+          "format": "svg",
+          "width": 180,
+          "height": 80,
+          "path": "shapes/v1/callout-arrow.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "shape-grid-dots-v1",
+      "kind": "shape",
+      "version": "v1",
+      "tags": ["grid", "dots", "pattern", "texture"],
+      "description": "Dot grid pattern for backgrounds and overlays",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "default",
+          "format": "svg",
+          "width": 240,
+          "height": 240,
+          "path": "shapes/v1/grid-dots.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "shape-grid-lines-v1",
+      "kind": "shape",
+      "version": "v1",
+      "tags": ["grid", "lines", "pattern", "structure"],
+      "description": "Line grid pattern for layouts and structure",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "default",
+          "format": "svg",
+          "width": 240,
+          "height": 240,
+          "path": "shapes/v1/grid-lines.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "shape-burst-rays-v1",
+      "kind": "shape",
+      "version": "v1",
+      "tags": ["burst", "rays", "radial", "energy"],
+      "description": "Radial burst shape with rays for dynamic effects",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "default",
+          "format": "svg",
+          "width": 240,
+          "height": 240,
+          "path": "shapes/v1/burst-rays.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "shape-underline-swash-v1",
+      "kind": "shape",
+      "version": "v1",
+      "tags": ["underline", "swash", "decorative", "text"],
+      "description": "Decorative underline swash for text emphasis",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "default",
+          "format": "svg",
+          "width": 200,
+          "height": 40,
+          "path": "shapes/v1/underline-swash.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "shape-badge-pill-v1",
+      "kind": "shape",
+      "version": "v1",
+      "tags": ["badge", "pill", "label", "tag"],
+      "description": "Pill-shaped badge for labels and tags",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "default",
+          "format": "svg",
+          "width": 120,
+          "height": 40,
+          "path": "shapes/v1/badge-pill.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "shape-frame-corner-v1",
+      "kind": "shape",
+      "version": "v1",
+      "tags": ["frame", "corner", "border", "decoration"],
+      "description": "Corner frame elements for image borders and layouts",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "default",
+          "format": "svg",
+          "width": 120,
+          "height": 120,
+          "path": "shapes/v1/frame-corner.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "shape-chevron-arrow-v1",
+      "kind": "shape",
+      "version": "v1",
+      "tags": ["chevron", "arrow", "direction", "navigation"],
+      "description": "Chevron arrow shape for navigation and direction",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "default",
+          "format": "svg",
+          "width": 80,
+          "height": 80,
+          "path": "shapes/v1/chevron-arrow.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "shape-decorative-flourish-v1",
+      "kind": "shape",
+      "version": "v1",
+      "tags": ["flourish", "decorative", "ornament", "elegant"],
+      "description": "Decorative flourish shape for elegant design elements",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "default",
+          "format": "svg",
+          "width": 160,
+          "height": 80,
+          "path": "shapes/v1/decorative-flourish.svg",
+          "themable": true
+        }
+      ]
+    },
+    {
+      "id": "background-sunset-gradient-v1",
+      "kind": "background",
+      "version": "v1",
+      "tags": ["gradient", "sunset", "warm", "colorful"],
+      "description": "Sunset gradient background with warm colors",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "default",
+          "format": "svg",
+          "width": 1920,
+          "height": 1080,
+          "path": "backgrounds/v1/gradients/sunset-gradient.svg",
+          "themable": false
+        }
+      ]
+    },
+    {
+      "id": "background-ocean-gradient-v1",
+      "kind": "background",
+      "version": "v1",
+      "tags": ["gradient", "ocean", "blue", "cool"],
+      "description": "Ocean gradient background with cool blue tones",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "default",
+          "format": "svg",
+          "width": 1920,
+          "height": 1080,
+          "path": "backgrounds/v1/gradients/ocean-gradient.svg",
+          "themable": false
+        }
+      ]
+    },
+    {
+      "id": "background-noise-texture-v1",
+      "kind": "background",
+      "version": "v1",
+      "tags": ["texture", "noise", "subtle", "overlay"],
+      "description": "Subtle noise texture background for overlays",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "default",
+          "format": "svg",
+          "width": 1920,
+          "height": 1080,
+          "path": "backgrounds/v1/textures/noise-texture.svg",
+          "themable": false
+        }
+      ]
+    },
+    {
+      "id": "background-paper-texture-v1",
+      "kind": "background",
+      "version": "v1",
+      "tags": ["texture", "paper", "organic", "natural"],
+      "description": "Paper texture background with organic feel",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "default",
+          "format": "svg",
+          "width": 1920,
+          "height": 1080,
+          "path": "backgrounds/v1/textures/paper-texture.svg",
+          "themable": false
+        }
+      ]
+    },
+    {
+      "id": "background-geometric-pattern-v1",
+      "kind": "background",
+      "version": "v1",
+      "tags": ["pattern", "geometric", "hexagon", "structure"],
+      "description": "Geometric pattern background with hexagonal elements",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "default",
+          "format": "svg",
+          "width": 1920,
+          "height": 1080,
+          "path": "backgrounds/v1/patterns/geometric-pattern.svg",
+          "themable": false
+        }
+      ]
+    },
+    {
+      "id": "background-dot-pattern-v1",
+      "kind": "background",
+      "version": "v1",
+      "tags": ["pattern", "dots", "minimal", "clean"],
+      "description": "Clean dot pattern background for minimal designs",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "author": "Remotion-UI",
+      "variants": [
+        {
+          "id": "default",
+          "format": "svg",
+          "width": 1920,
+          "height": 1080,
+          "path": "backgrounds/v1/patterns/dot-pattern.svg",
+          "themable": false
         }
       ]
     }

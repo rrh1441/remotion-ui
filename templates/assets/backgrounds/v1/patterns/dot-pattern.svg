@@ -1,0 +1,13 @@
+<svg viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="dotPattern" patternUnits="userSpaceOnUse" width="40" height="40">
+      <rect width="40" height="40" fill="#ffffff"/>
+      <circle cx="20" cy="20" r="2" fill="#e9ecef"/>
+      <circle cx="10" cy="10" r="1" fill="#f8f9fa"/>
+      <circle cx="30" cy="10" r="1" fill="#f8f9fa"/>
+      <circle cx="10" cy="30" r="1" fill="#f8f9fa"/>
+      <circle cx="30" cy="30" r="1" fill="#f8f9fa"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#dotPattern)"/>
+</svg>

@@ -1,0 +1,7 @@
+<svg viewBox="0 0 240 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M20 20 L200 20 L220 40 L200 60 L20 60 L10 50 L10 30 Z" fill="currentColor"/>
+  <path d="M20 20 L200 20 L220 40 L200 60 L20 60 L10 50 L10 30 Z" stroke="currentColor" stroke-width="2" fill="none" opacity="0.8"/>
+  <!-- Ribbon fold effects -->
+  <path d="M10 30 L20 20 L20 35 Z" fill="currentColor" opacity="0.3"/>
+  <path d="M10 50 L20 60 L20 45 Z" fill="currentColor" opacity="0.3"/>
+</svg>

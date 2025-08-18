@@ -1,0 +1,12 @@
+<svg viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sunsetGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B6B" stop-opacity="1"/>
+      <stop offset="25%" stop-color="#FF8E53" stop-opacity="1"/>
+      <stop offset="50%" stop-color="#FF6B9D" stop-opacity="1"/>
+      <stop offset="75%" stop-color="#C44569" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#8B4A6B" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#sunsetGradient)"/>
+</svg>

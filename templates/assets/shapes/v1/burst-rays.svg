@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g opacity="0.8">
+    <!-- Central rays -->
+    <path d="M120 40 L120 200" stroke="currentColor" stroke-width="2"/>
+    <path d="M40 120 L200 120" stroke="currentColor" stroke-width="2"/>
+    <path d="M63.43 63.43 L176.57 176.57" stroke="currentColor" stroke-width="2"/>
+    <path d="M176.57 63.43 L63.43 176.57" stroke="currentColor" stroke-width="2"/>
+    
+    <!-- Secondary rays -->
+    <path d="M120 60 L120 180" stroke="currentColor" stroke-width="1" opacity="0.6"/>
+    <path d="M60 120 L180 120" stroke="currentColor" stroke-width="1" opacity="0.6"/>
+    <path d="M80.71 80.71 L159.29 159.29" stroke="currentColor" stroke-width="1" opacity="0.6"/>
+    <path d="M159.29 80.71 L80.71 159.29" stroke="currentColor" stroke-width="1" opacity="0.6"/>
+    
+    <!-- Outer rays -->
+    <path d="M120 20 L120 80" stroke="currentColor" stroke-width="3"/>
+    <path d="M120 160 L120 220" stroke="currentColor" stroke-width="3"/>
+    <path d="M20 120 L80 120" stroke="currentColor" stroke-width="3"/>
+    <path d="M160 120 L220 120" stroke="currentColor" stroke-width="3"/>
+  </g>
+  
+  <!-- Center circle -->
+  <circle cx="120" cy="120" r="8" fill="currentColor"/>
+</svg>
