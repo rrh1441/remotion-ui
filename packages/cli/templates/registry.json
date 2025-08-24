@@ -300,5 +300,33 @@
     "files": [
       "components/text/TextHighlight.tsx"
     ]
+  },
+  "tts-provider": {
+    "name": "tts-provider",
+    "dependencies": [],
+    "files": [
+      "components/audio/TTSProvider.tsx"
+    ]
+  },
+  "audio-sequence": {
+    "name": "audio-sequence",
+    "dependencies": [],
+    "files": [
+      "components/audio/AudioSequence.tsx"
+    ]
+  },
+  "caption-sync": {
+    "name": "caption-sync",
+    "dependencies": [],
+    "files": [
+      "components/audio/CaptionSync.tsx"
+    ]
+  },
+  "waveform-visualizer": {
+    "name": "waveform-visualizer",
+    "dependencies": [],
+    "files": [
+      "components/audio/WaveformVisualizer.tsx"
+    ]
   }
 }

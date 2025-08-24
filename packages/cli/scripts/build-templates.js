@@ -222,6 +222,28 @@ const COMPONENT_REGISTRY = {
     source: 'text/src/components/TextHighlight.tsx',
     target: 'components/text/TextHighlight.tsx',
     dependencies: []
+  },
+  
+  // Audio components
+  'tts-provider': {
+    source: 'audio/src/components/TTSProvider.tsx',
+    target: 'components/audio/TTSProvider.tsx',
+    dependencies: []
+  },
+  'audio-sequence': {
+    source: 'audio/src/components/AudioSequence.tsx',
+    target: 'components/audio/AudioSequence.tsx',
+    dependencies: []
+  },
+  'caption-sync': {
+    source: 'audio/src/components/CaptionSync.tsx',
+    target: 'components/audio/CaptionSync.tsx',
+    dependencies: []
+  },
+  'waveform-visualizer': {
+    source: 'audio/src/components/WaveformVisualizer.tsx',
+    target: 'components/audio/WaveformVisualizer.tsx',
+    dependencies: []
   }
 };
 

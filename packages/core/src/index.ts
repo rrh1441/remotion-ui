@@ -13,6 +13,7 @@ export { TimelineGate, type TimelineGateProps } from './primitives/TimelineGate'
 
 // Utils
 export { getEasingFunction, interpolateWithEasing } from './utils/easing';
+export { splitStyles, layoutKeys, mergeChildStyles } from './utils/styles';
 
 // Types
 export type {
