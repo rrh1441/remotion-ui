@@ -1,4 +1,5 @@
 import React from 'react';
+import { z } from 'zod';
 import { FadeIn, ScaleIn } from '@remotion-ui/core';
 import { useTheme } from '@remotion-ui/themes';
 
@@ -10,6 +11,29 @@ export interface TitleCardProps {
   durationInFrames?: number;
   className?: string;
 }
+
+export const TitleCardSchema = z.object({
+  title: z.string().min(1, 'Title is required'),
+  subtitle: z.string().optional(),
+  backgroundColor: z.string().optional(),
+  startAt: z.number().min(0).default(0),
+  durationInFrames: z.number().min(1).default(60),
+  className: z.string().optional(),
+});
+
+export const getTitleCardDefaults = (): TitleCardProps => {
+  const parsed = TitleCardSchema.parse({
+    title: 'Sample Title'
+  });
+  return {
+    title: parsed.title,
+    startAt: parsed.startAt,
+    durationInFrames: parsed.durationInFrames,
+    ...(parsed.subtitle !== undefined && { subtitle: parsed.subtitle }),
+    ...(parsed.backgroundColor !== undefined && { backgroundColor: parsed.backgroundColor }),
+    ...(parsed.className !== undefined && { className: parsed.className }),
+  };
+};
 
 export const TitleCard: React.FC<TitleCardProps> = ({
   title,

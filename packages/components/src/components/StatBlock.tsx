@@ -37,7 +37,7 @@ export const StatBlock: React.FC<StatBlockProps> = ({
       startAt={startAt}
       durationInFrames={durationInFrames}
       initialScale={0.8}
-      className={className}
+      {...(className && { className })}
     >
       <div
         style={{

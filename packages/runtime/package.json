@@ -1,0 +1,87 @@
+{
+  "name": "@contentfork/remotion-runtime",
+  "version": "0.3.1-beta.1",
+  "description": "React components for Remotion - motion graphics made simple",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./components": {
+      "types": "./dist/components.d.ts",
+      "import": "./dist/components.mjs",
+      "require": "./dist/components.js"
+    },
+    "./core": {
+      "types": "./dist/core.d.ts",
+      "import": "./dist/core.mjs", 
+      "require": "./dist/core.js"
+    },
+    "./themes": {
+      "types": "./dist/themes.d.ts",
+      "import": "./dist/themes.mjs",
+      "require": "./dist/themes.js"
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rrh1441/remotion-ui.git",
+    "directory": "packages/runtime"
+  },
+  "homepage": "https://github.com/rrh1441/remotion-ui",
+  "bugs": {
+    "url": "https://github.com/rrh1441/remotion-ui/issues"
+  },
+  "keywords": [
+    "remotion",
+    "components",
+    "react", 
+    "video",
+    "animation",
+    "motion-graphics"
+  ],
+  "author": "Ryan Heger",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint . --ext .ts,.tsx",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo",
+    "prepublishOnly": "pnpm run clean && pnpm run build"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "remotion": "^4.0.0"
+  },
+  "dependencies": {
+    "zod": "^3.23.8",
+    "@lottiefiles/dotlottie-web": "^0.50.0",
+    "@remotion/lottie": "^4.0.339"
+  },
+  "devDependencies": {
+    "@remotion-ui/eslint-config": "workspace:*",
+    "@remotion-ui/ts-config": "workspace:*",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18",
+    "eslint": "^8.57.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.212",
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4"
+  }
+}

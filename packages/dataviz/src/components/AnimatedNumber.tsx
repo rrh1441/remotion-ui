@@ -1,4 +1,5 @@
 import React, { useMemo } from 'react';
+import { z } from 'zod';
 import { interpolate, useCurrentFrame } from 'remotion';
 
 export interface AnimatedNumberProps {
@@ -14,6 +15,26 @@ export interface AnimatedNumberProps {
   className?: string;
   style?: React.CSSProperties;
 }
+
+export const AnimatedNumberSchema = z.object({
+  value: z.number(),
+  format: z.enum(['number', 'currency', 'percent', 'compact']).default('number'),
+  duration: z.number().min(1).default(30),
+  decimals: z.number().min(0).max(20).default(0),
+  prefix: z.string().default(''),
+  suffix: z.string().default(''),
+  startAt: z.number().min(0).default(0),
+  locale: z.string().default('en-US'),
+  currency: z.string().default('USD'),
+  className: z.string().optional(),
+  style: z.record(z.any()).optional(),
+});
+
+export const getAnimatedNumberDefaults = (): AnimatedNumberProps => {
+  return AnimatedNumberSchema.parse({
+    value: 100
+  });
+};
 
 export const AnimatedNumber: React.FC<AnimatedNumberProps> = ({
   value,

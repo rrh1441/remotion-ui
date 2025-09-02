@@ -204,6 +204,9 @@ importers:
       '@remotion/lottie':
         specifier: ^4.0.339
         version: 4.0.339(lottie-web@5.13.0)(react-dom@19.1.1(react@18.3.1))(react@18.3.1)
+      zod:
+        specifier: ^3.23.8
+        version: 3.25.76
     devDependencies:
       '@remotion-ui/eslint-config':
         specifier: workspace:*
@@ -268,6 +271,9 @@ importers:
       '@remotion-ui/themes':
         specifier: workspace:*
         version: link:../themes
+      zod:
+        specifier: ^3.23.8
+        version: 3.25.76
     devDependencies:
       '@remotion-ui/eslint-config':
         specifier: workspace:*
@@ -287,6 +293,49 @@ importers:
       remotion:
         specifier: ^4.0.212
         version: 4.0.339(react-dom@19.1.1(react@18.3.1))(react@18.3.1)
+      tsup:
+        specifier: ^8.2.4
+        version: 8.5.0(jiti@1.21.7)(postcss@8.5.6)(typescript@5.9.2)(yaml@2.8.1)
+      typescript:
+        specifier: ^5.5.4
+        version: 5.9.2
+
+  packages/runtime:
+    dependencies:
+      '@lottiefiles/dotlottie-web':
+        specifier: ^0.50.0
+        version: 0.50.0
+      '@remotion/lottie':
+        specifier: ^4.0.339
+        version: 4.0.339(lottie-web@5.13.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      zod:
+        specifier: ^3.23.8
+        version: 3.25.76
+    devDependencies:
+      '@remotion-ui/eslint-config':
+        specifier: workspace:*
+        version: link:../../tooling/eslint-config
+      '@remotion-ui/ts-config':
+        specifier: workspace:*
+        version: link:../../tooling/ts-config
+      '@types/react':
+        specifier: ^18.3.3
+        version: 18.3.23
+      '@types/react-dom':
+        specifier: ^18
+        version: 18.3.7(@types/react@18.3.23)
+      eslint:
+        specifier: ^8.57.0
+        version: 8.57.1
+      react:
+        specifier: ^18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: ^18.3.1
+        version: 18.3.1(react@18.3.1)
+      remotion:
+        specifier: ^4.0.212
+        version: 4.0.339(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       tsup:
         specifier: ^8.2.4
         version: 8.5.0(jiti@1.21.7)(postcss@8.5.6)(typescript@5.9.2)(yaml@2.8.1)
@@ -4349,6 +4398,13 @@ snapshots:
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
+
+  '@remotion/lottie@4.0.339(lottie-web@5.13.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      lottie-web: 5.13.0
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      remotion: 4.0.339(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
   '@remotion/lottie@4.0.339(lottie-web@5.13.0)(react-dom@19.1.1(react@18.3.1))(react@18.3.1)':
     dependencies:

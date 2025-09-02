@@ -28,7 +28,8 @@
   },
   "dependencies": {
     "@remotion-ui/core": "workspace:*",
-    "@remotion-ui/themes": "workspace:*"
+    "@remotion-ui/themes": "workspace:*",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@remotion-ui/eslint-config": "workspace:*",

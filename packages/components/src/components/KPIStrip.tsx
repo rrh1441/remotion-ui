@@ -23,7 +23,7 @@ export const KPIStrip: React.FC<KPIStripProps> = ({
       gap={gap}
       justify="center"
       align="stretch"
-      className={className}
+      {...(className && { className })}
       wrap
     >
       <Stagger staggerDelay={staggerDelay} startAt={startAt}>

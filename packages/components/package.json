@@ -30,7 +30,8 @@
     "@lottiefiles/dotlottie-web": "^0.50.0",
     "@remotion-ui/core": "workspace:*",
     "@remotion-ui/themes": "workspace:*",
-    "@remotion/lottie": "^4.0.339"
+    "@remotion/lottie": "^4.0.339",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@remotion-ui/eslint-config": "workspace:*",
